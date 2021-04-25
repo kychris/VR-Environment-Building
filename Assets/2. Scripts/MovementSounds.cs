@@ -7,7 +7,8 @@ namespace UnityEngine.XR.Interaction.Toolkit
     public class MovementSounds : MonoBehaviour
     {
 
-        public new AudioSource audio;
+        public AudioSource dirtAudio;
+        public AudioSource waterAudio;
 
         /// <summary>
         /// Sets which input axis to use when reading from controller input.
@@ -65,23 +66,51 @@ namespace UnityEngine.XR.Interaction.Toolkit
             var feature = k_Vec2UsageList[(int)m_InputBinding];
             for (var i = 0; i < m_Controllers.Count; ++i)
             {
+                // Get controller and check if controller is nulls
                 var controller = m_Controllers[i] as XRController;
                 if (controller != null &&
                     controller.enableInputActions &&
                     controller.inputDevice.TryGetFeatureValue(feature, out var controllerInput))
                 {
+                    // If player is walking
                     if (controllerInput.magnitude > 0.2)
                     {
-                        if (!audio.isPlaying)
+                        // Shoot down a ray to check ground
+                        RaycastHit hit;
+                        if (Physics.Raycast(transform.position, Vector3.down, out hit))
                         {
-                            audio.Play();
+                            var floortag = hit.collider.gameObject.tag;
+                            print(floortag);
+
+                            // If on water, play water sound
+                            if ((floortag == "Water"))
+                            {
+                                if (!waterAudio.isPlaying)
+                                {
+                                    print("water is playing");
+                                    dirtAudio.Stop();
+                                    waterAudio.Play();
+                                }
+                            }
+
+                            // If on dirt, play dirt sound
+                            else if (floortag == "Ground")
+                            {
+                                if (!dirtAudio.isPlaying)
+                                {
+                                    print("dirt is playing");
+                                    waterAudio.Stop();
+                                    dirtAudio.Play();
+                                }
+                            }
                         }
                     }
+                    // Player not walking, stop step sounds
                     else
                     {
-                        audio.Stop();
+                        dirtAudio.Stop();
+                        waterAudio.Stop();
                     }
-
                 }
             }
         }
