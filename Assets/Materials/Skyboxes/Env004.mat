@@ -9,9 +9,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Env004
   m_Shader: {fileID: 4800000, guid: 6fc9318f5193c094c98c0d450cd61e3b, type: 3}
-  m_ShaderKeywords: _BACKGROUNDMODE_COLORS _DISABLEDIRECTIONLIGHT_ON _ENABLECLOUDSROTATION_ON
-    _ENABLECLOUDS_ON _ENABLESUNMOONMASK_ON _ENABLESUNMOON_ON _ENABLESUN_ON _USECUBEMAP_ON
-    _USEENVIRONMENTGRADIENT_ON _USETEXTURE_ON
+  m_ShaderKeywords: _BACKGROUNDMODE_COLORS _DISABLEDIRECTIONLIGHT_ON _ENABLEBUILTINFOG_ON
+    _ENABLECLOUDSROTATION_ON _ENABLECLOUDS_ON _ENABLESUNMOONMASK_ON _ENABLESUNMOON_ON
+    _ENABLESUN_ON _USECUBEMAP_ON _USEENVIRONMENTGRADIENT_ON _USETEXTURE_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -175,7 +175,7 @@ Material:
     - _DisableRotation: 0
     - _DstBlend: 0
     - _Enable1Twinkling: 0
-    - _EnableBuiltinFog: 0
+    - _EnableBuiltinFog: 1
     - _EnableClouds: 1
     - _EnableCloudsRotation: 1
     - _EnableDirectionLight: 0
@@ -204,8 +204,8 @@ Material:
     - _Float5: -0.2
     - _Float6: 1
     - _FogCat: 1
-    - _FogFill: 0.165
-    - _FogHeight: 0.29
+    - _FogFill: 0
+    - _FogHeight: 0.1
     - _FogIntensity: 0
     - _FogSmoothness: 0.01
     - _GlossMapScale: 1
