@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : StateMachineBehaviour
+public class CrowdStateMachine : StateMachineBehaviour
 {
     private float lastPoseChangeDuration = float.PositiveInfinity;
     private float poseChangeFrequency = 2f;
