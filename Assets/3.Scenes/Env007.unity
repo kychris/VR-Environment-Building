@@ -1254,13 +1254,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 5657a54f6f90e754583c83dedff4afd0, type: 2}
     - target: {fileID: 9581884, guid: 471247d5cf89b2c46bcde0f08524197e, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'Root'\n\tTransform 'IndexFinger_02'\n\tTransform
-        'Elbow_R'\n\tTransform 'Finger_02'\n\tTransform 'Finger_03'\n\tTransform
-        'Ball_L'\n\tTransform 'Thumb_02'\n\tTransform 'Ball_R'\n\tTransform 'Clavicle_L'\n\tTransform
-        'Finger_01'\n\tand more ...\n\tFrom animation clip 'Sit Clapping01 1'\n\tFrom
-        animation clip 'Sit Cheering'"
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 471247d5cf89b2c46bcde0f08524197e, type: 3}
@@ -2064,7 +2058,7 @@ PrefabInstance:
     - target: {fileID: 9509074, guid: 5e488cfd825ce044395037d93a9d8eb6, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 897b34267f422c1499700402763d096e, type: 3}
     - target: {fileID: 9509074, guid: 5e488cfd825ce044395037d93a9d8eb6, type: 3}
       propertyPath: m_Controller
       value: 
@@ -2399,7 +2393,7 @@ PrefabInstance:
     - target: {fileID: 9529026, guid: 236e70cfb8ad0fc448c79a2155a5d3c2, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 897b34267f422c1499700402763d096e, type: 3}
     - target: {fileID: 9529026, guid: 236e70cfb8ad0fc448c79a2155a5d3c2, type: 3}
       propertyPath: m_Controller
       value: 
@@ -3451,14 +3445,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 5657a54f6f90e754583c83dedff4afd0, type: 2}
     - target: {fileID: 9557904, guid: 5f6cbb0f4dd572e47ab1ee6c2a3a36d1, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'Root'\n\tTransform 'IndexFinger_02'\n\tTransform
-        'Elbow_R'\n\tTransform 'Finger_02'\n\tTransform 'Finger_03'\n\tTransform
-        'Ball_L'\n\tTransform 'Thumb_02'\n\tTransform 'Ball_R'\n\tTransform 'Clavicle_L'\n\tTransform
-        'Finger_01'\n\tand more ...\n\tFrom animation clip 'Sit Clapping01 1'\n\tFrom
-        animation clip 'Sit Cheering'\n\tFrom animation clip 'Sit Clapping01'\n\tFrom
-        animation clip 'Sit Clapping01 1'"
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f6cbb0f4dd572e47ab1ee6c2a3a36d1, type: 3}
@@ -3520,7 +3507,7 @@ PrefabInstance:
     - target: {fileID: 9518016, guid: 841e8e4f1a54c754396b7559d1cc6fad, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 897b34267f422c1499700402763d096e, type: 3}
     - target: {fileID: 9518016, guid: 841e8e4f1a54c754396b7559d1cc6fad, type: 3}
       propertyPath: m_Controller
       value: 
@@ -3585,7 +3572,7 @@ PrefabInstance:
     - target: {fileID: 9526412, guid: 6412c6bdd410913469520a05a1632885, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 897b34267f422c1499700402763d096e, type: 3}
     - target: {fileID: 9526412, guid: 6412c6bdd410913469520a05a1632885, type: 3}
       propertyPath: m_Controller
       value: 
