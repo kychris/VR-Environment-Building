@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CrowdStateMachine : StateMachineBehaviour
 {
+    public float poseChangeFrequency = 2f;
     private float lastPoseChangeDuration = float.PositiveInfinity;
-    private float poseChangeFrequency = 2f;
     private float startPose;
     private float endPose;
 
