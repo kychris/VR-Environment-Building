@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class AnimationBlendStates : StateMachineBehaviour
 {
+    public float poseChangeFrequency = 2f;
     private float lastPoseChangeDuration = float.PositiveInfinity;
-    private float poseChangeFrequency = 2f;
     private float startPose;
     private float endPose;
 
@@ -22,6 +22,7 @@ public class AnimationBlendStates : StateMachineBehaviour
             lastPoseChangeDuration = 0;
         }
         animator.SetFloat("FinishedPose", Mathf.Lerp(startPose, endPose, lastPoseChangeDuration / poseChangeFrequency));
+
 
         // base.OnStateUpdate(animator, stateInfo, layerIndex);
     }
